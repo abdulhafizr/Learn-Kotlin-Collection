@@ -16,7 +16,7 @@ fun main() {
     println(students.sortedByDescending { it.name })
     println(students.sortedByDescending { it.nim })
 
-    println(students.sortedWith(Comparator { student1, student2 ->
+    println(students.sortedWith { student1, student2 ->
         student1.name.compareTo(student2.name)
-    }))
+    })
 }
